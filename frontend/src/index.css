@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply scroll-smooth;
+	}
+	body {
+		@apply min-h-screen bg-gradient-to-br from-slate-100 via-white to-cyan-50 text-slate-900;
+	}
+	html.dark body {
+		@apply from-slate-950 via-slate-950 to-slate-900 text-slate-100;
+	}
+}
+
+@layer utilities {
+	.glass {
+		@apply bg-white/70 backdrop-blur-xl border border-slate-200/80 shadow-glass dark:bg-white/5 dark:border-white/10;
+	}
+	.glass-dark {
+		@apply bg-slate-900/60 backdrop-blur-xl border border-white/10;
+	}
+	.text-gradient {
+		@apply bg-gradient-to-r from-cyan-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent;
+	}
+}

@@ -1,0 +1,9 @@
+.env
+node_modules/
+*.log
+.idea/
+.vscode/
+dist/
+coverage/
+npm-debug.log
+service-account-*.json
